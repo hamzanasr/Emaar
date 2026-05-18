@@ -1,0 +1,120 @@
+{
+  "common": {
+    "appName": "Emaar Construction Platform",
+    "appTagline": "An integrated solution for engineering projects and consultations",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "home": "Home",
+    "projects": "Construction Projects",
+    "marketplace": "Materials Marketplace",
+    "chat": "Chat",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "settings": "Settings",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "error": "An error occurred",
+    "success": "Operation completed successfully",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "auth": {
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "05xxxxxxxx",
+    "sendOtp": "Send Verification Code",
+    "otpLabel": "Verification Code",
+    "otpPlaceholder": "Enter the code sent",
+    "verifyOtp": "Verify",
+    "otpSent": "Verification code sent to {phone}",
+    "otpExpires": "Code expires in {seconds} seconds",
+    "resendOtp": "Resend Code",
+    "welcomeBack": "Welcome back to Emaar Construction Platform",
+    "createAccount": "Create your account on Emaar Construction Platform"
+  },
+  "roles": {
+    "client": "Client / Owner",
+    "clientDescription": "Launch your construction project and track every milestone with confidence",
+    "contractor": "Engineering Contractor",
+    "contractorDescription": "Submit technical bids and upload engineering blueprints",
+    "supplier": "Supplier / Merchant",
+    "supplierDescription": "Showcase your building materials and lighting products",
+    "admin": "Platform Administration",
+    "adminDescription": "Full control over projects, reviews, and reports"
+  },
+  "project": {
+    "createNew": "Create New Construction Project",
+    "title": "Project Title",
+    "description": "Project Description & Engineering Requirements",
+    "budget": "Approved Budget",
+    "category": "Project Category",
+    "region": "Geographic Region",
+    "status": "Status",
+    "milestones": "Execution Milestones",
+    "bids": "Technical Bids",
+    "blueprints": "Engineering Blueprints",
+    "specifications": "Technical Specifications",
+    "completionPercent": "Completion Rate",
+    "statuses": {
+      "DRAFT": "Draft",
+      "PUBLISHED": "Published",
+      "BIDDING": "Receiving Bids",
+      "IN_PROGRESS": "In Progress",
+      "PAUSED": "Temporarily Paused",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled",
+      "DISPUTED": "Under Dispute"
+    }
+  },
+  "escrow": {
+    "title": "Financial Escrow",
+    "deposit": "Deposit Escrow",
+    "release": "Release Payment",
+    "held": "Held",
+    "released": "Released",
+    "totalBudget": "Total Budget",
+    "platformFee": "Platform Fee",
+    "depositInstructions": "Funds will be held in a secure escrow account until milestone approval",
+    "releaseConfirmation": "Do you confirm milestone approval and payment release?"
+  },
+  "milestone": {
+    "submit": "Submit Milestone for Review",
+    "approve": "Approve Milestone",
+    "reject": "Reject with Required Fixes",
+    "proofMedia": "Completion Proof (Photos/Videos)",
+    "engineerNotes": "Engineer Notes",
+    "statuses": {
+      "PENDING": "Pending",
+      "IN_PROGRESS": "In Progress",
+      "SUBMITTED": "Submitted for Review",
+      "UNDER_REVIEW": "Under Engineering Review",
+      "APPROVED": "Approved",
+      "REJECTED": "Needs Revision",
+      "PAID": "Paid"
+    }
+  },
+  "quality": {
+    "title": "Quality Review",
+    "score": "Engineering Compliance Score",
+    "verdict": {
+      "PASS": "Specification Compliant",
+      "FAIL": "Non-Compliant",
+      "CONDITIONAL_PASS": "Conditionally Accepted"
+    }
+  },
+  "marketplace": {
+    "title": "Materials & Finishes Marketplace",
+    "categories": "Categories",
+    "stores": "Verified Stores",
+    "addToOrder": "Add to Order",
+    "stockAvailable": "In Stock",
+    "outOfStock": "Currently Out of Stock"
+  }
+}
