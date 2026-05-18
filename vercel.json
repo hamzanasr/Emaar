@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd apps/web-portal && npm run build",
+  "outputDirectory": "apps/web-portal/.next",
+  "framework": "nextjs",
+  "installCommand": "npm install --legacy-peer-deps"
+}
