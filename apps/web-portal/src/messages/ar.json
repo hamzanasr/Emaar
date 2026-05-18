@@ -1,0 +1,120 @@
+{
+  "common": {
+    "appName": "منصة إعمار الهندسية",
+    "appTagline": "حلٌّ متكامل للمشاريع الإنشائية والاستشارات الهندسية",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "home": "الرئيسية",
+    "projects": "المشاريع الإنشائية",
+    "marketplace": "سوق المواد",
+    "chat": "المحادثات",
+    "notifications": "الإشعارات",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث",
+    "loading": "جارٍ التحميل...",
+    "noResults": "لا توجد نتائج",
+    "error": "حدث خطأ",
+    "success": "تمت العملية بنجاح",
+    "back": "رجوع",
+    "next": "التالي",
+    "submit": "إرسال"
+  },
+  "auth": {
+    "phoneLabel": "رقم الجوال",
+    "phonePlaceholder": "05xxxxxxxx",
+    "sendOtp": "إرسال رمز التحقق",
+    "otpLabel": "رمز التحقق",
+    "otpPlaceholder": "أدخل الرمز المُرسَل",
+    "verifyOtp": "تحقّق",
+    "otpSent": "تم إرسال رمز التحقق إلى {phone}",
+    "otpExpires": "تنتهي صلاحية الرمز خلال {seconds} ثانية",
+    "resendOtp": "إعادة إرسال الرمز",
+    "welcomeBack": "أهلاً بعودتك إلى منصة إعمار الهندسية",
+    "createAccount": "أنشئ حسابك في منصة إعمار الهندسية"
+  },
+  "roles": {
+    "client": "العميل / المالك",
+    "clientDescription": "أطلق مشروعك الإنشائي وتابع كل مرحلة بثقة",
+    "contractor": "المقاول الهندسي",
+    "contractorDescription": "قدّم عروضك الفنية وارفع المخططات الهندسية",
+    "supplier": "المورد / التاجر",
+    "supplierDescription": "اعرض منتجاتك من مواد البناء والإضاءات",
+    "admin": "إدارة المنصة",
+    "adminDescription": "التحكم الكامل بالمشاريع والمراجعات والتقارير"
+  },
+  "project": {
+    "createNew": "إنشاء مشروع إنشائي جديد",
+    "title": "عنوان المشروع",
+    "description": "وصف المشروع والمتطلبات الهندسية",
+    "budget": "الميزانية المعتمدة",
+    "category": "تصنيف المشروع",
+    "region": "المنطقة الجغرافية",
+    "status": "الحالة",
+    "milestones": "المراحل التنفيذية",
+    "bids": "العروض الفنية",
+    "blueprints": "المخططات الهندسية",
+    "specifications": "المواصفات الفنية",
+    "completionPercent": "نسبة الإنجاز",
+    "statuses": {
+      "DRAFT": "مسودة",
+      "PUBLISHED": "منشور",
+      "BIDDING": "استقبال عروض",
+      "IN_PROGRESS": "قيد التنفيذ",
+      "PAUSED": "متوقف مؤقتاً",
+      "COMPLETED": "مكتمل",
+      "CANCELLED": "ملغى",
+      "DISPUTED": "متنازع عليه"
+    }
+  },
+  "escrow": {
+    "title": "الضمان المالي",
+    "deposit": "إيداع الضمان",
+    "release": "الإفراج عن الدفعة",
+    "held": "محجوز",
+    "released": "مُفرَج عنه",
+    "totalBudget": "الميزانية الإجمالية",
+    "platformFee": "عمولة المنصة",
+    "depositInstructions": "سيتم حفظ المبلغ في حساب وسيط آمن حتى اعتماد المرحلة",
+    "releaseConfirmation": "هل تؤكد الموافقة على المرحلة والإفراج عن الدفعة؟"
+  },
+  "milestone": {
+    "submit": "تسليم المرحلة للمراجعة",
+    "approve": "اعتماد المرحلة",
+    "reject": "رفض مع طلب تعديلات",
+    "proofMedia": "أدلة الإنجاز (صور/فيديو)",
+    "engineerNotes": "ملاحظات المهندس",
+    "statuses": {
+      "PENDING": "معلّقة",
+      "IN_PROGRESS": "قيد التنفيذ",
+      "SUBMITTED": "مُسلَّمة للمراجعة",
+      "UNDER_REVIEW": "قيد المراجعة الهندسية",
+      "APPROVED": "معتمدة",
+      "REJECTED": "تحتاج تعديلات",
+      "PAID": "مدفوعة"
+    }
+  },
+  "quality": {
+    "title": "مراجعة الجودة",
+    "score": "درجة المطابقة الهندسية",
+    "verdict": {
+      "PASS": "مُطابق للمواصفات",
+      "FAIL": "غير مُطابق",
+      "CONDITIONAL_PASS": "مقبول مع تحفظات"
+    }
+  },
+  "marketplace": {
+    "title": "سوق المواد والتشطيبات",
+    "categories": "الفئات",
+    "stores": "المتاجر المعتمدة",
+    "addToOrder": "أضِف للطلب",
+    "stockAvailable": "متوفر في المخزون",
+    "outOfStock": "غير متوفر حالياً"
+  }
+}

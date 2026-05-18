@@ -1,0 +1,294 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* ═══════════════════════════════════════════════════════════
+   Emaar Construction Platform — Cinematic Design System
+   ═══════════════════════════════════════════════════════════ */
+
+@layer base {
+  :root {
+    /* Brand Tokens */
+    --color-primary: #1B2A4A;
+    --color-accent: #C8102E;
+    --color-gold: #C9A961;
+
+    /* Cinematic Surfaces */
+    --color-cinema-black: #050810;
+    --color-cinema-deepest: #080D1A;
+    --color-cinema-deep: #0F1729;
+    --color-cinema-surface: #141C30;
+    --color-cinema-elevated: #1A2540;
+
+    /* Status */
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+
+    /* Typography */
+    --letter-spacing-cinema: -0.02em;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Cairo', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-cinema-deepest);
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.7;
+    letter-spacing: var(--letter-spacing-cinema);
+    overflow-x: hidden;
+  }
+
+  /* RTL Support */
+  [dir='rtl'] {
+    text-align: right;
+  }
+
+  /* Headings — Tighter cinematic feel */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  /* Selection color */
+  ::selection {
+    background-color: rgba(201, 169, 97, 0.3);
+    color: #FFFFFF;
+  }
+
+  /* Custom scrollbar — luxurious */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0E1A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #1A2540, #141C30);
+    border-radius: 10px;
+    border: 2px solid #0A0E1A;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #C9A961, #876E32);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Cinematic Components
+   ═══════════════════════════════════════════════════════════ */
+
+@layer components {
+  /* ─── Buttons ───────────────────────────────────────── */
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center
+           bg-primary-700 text-white px-7 py-3.5 rounded-button
+           font-semibold tracking-cinema
+           transition-all duration-300
+           hover:bg-primary-600 hover:shadow-glow-blue
+           active:scale-[0.98]
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-accent {
+    @apply relative inline-flex items-center justify-center
+           bg-crimson-gradient text-white px-7 py-3.5 rounded-button
+           font-semibold tracking-cinema
+           transition-all duration-300
+           hover:shadow-glow-crimson
+           active:scale-[0.98];
+  }
+
+  .btn-gold {
+    @apply relative inline-flex items-center justify-center
+           bg-gold-gradient text-cinema-deepest px-7 py-3.5 rounded-button
+           font-bold tracking-cinema
+           transition-all duration-300
+           hover:shadow-glow-gold
+           active:scale-[0.98];
+  }
+
+  .btn-outline-gold {
+    @apply relative inline-flex items-center justify-center
+           border border-gold-500/50 text-gold-300
+           px-7 py-3.5 rounded-button font-semibold tracking-cinema
+           transition-all duration-300
+           hover:border-gold-400 hover:text-gold-200 hover:bg-gold-500/5
+           hover:shadow-glow-gold-sm
+           active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center
+           text-white/80 px-7 py-3.5 rounded-button
+           font-medium tracking-cinema
+           transition-all duration-300
+           hover:bg-white/5 hover:text-white;
+  }
+
+  /* ─── Cards ─────────────────────────────────────────── */
+  .card {
+    @apply bg-cinema-surface rounded-card-lg p-6
+           border border-cinema-border
+           shadow-cinema
+           transition-all duration-500
+           hover:border-gold-500/20 hover:shadow-cinema-lg;
+  }
+
+  .card-glass {
+    @apply relative rounded-card-lg p-6
+           backdrop-blur-cinema
+           bg-white/[0.03]
+           border border-white/[0.08]
+           shadow-cinema
+           transition-all duration-500
+           hover:bg-white/[0.05] hover:border-gold-500/20;
+  }
+
+  .card-luxury {
+    @apply relative rounded-card-lg p-6
+           bg-cinema-card
+           border border-gold-500/[0.15]
+           shadow-cinema shadow-inner-luxury
+           transition-all duration-500
+           hover:border-gold-500/30 hover:shadow-cinema-lg;
+  }
+
+  /* ─── Inputs ────────────────────────────────────────── */
+  .input-field {
+    @apply w-full px-4 py-3.5
+           bg-cinema-deep border border-white/10
+           rounded-button text-white placeholder-white/30
+           tracking-cinema
+           focus:outline-none focus:border-gold-500/50
+           focus:ring-1 focus:ring-gold-500/30
+           transition-all duration-300;
+  }
+
+  /* ─── Text Effects ──────────────────────────────────── */
+  .text-gold-gradient {
+    @apply bg-gold-text bg-clip-text text-transparent;
+  }
+
+  .text-cinema {
+    @apply tracking-cinema;
+  }
+
+  /* ─── Surfaces ──────────────────────────────────────── */
+  .cinema-section {
+    @apply relative bg-cinema-deepest;
+  }
+
+  .cinema-section-hero {
+    @apply relative bg-cinema-hero;
+  }
+
+  /* Cinematic divider with gold ghost glow */
+  .divider-gold {
+    @apply relative my-8 h-px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(201, 169, 97, 0.3) 50%,
+      transparent 100%
+    );
+  }
+
+  /* ─── Badges ────────────────────────────────────────── */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1
+           rounded-full text-xs font-semibold tracking-wide
+           border;
+  }
+
+  .badge-gold {
+    @apply badge bg-gold-500/10 text-gold-300 border-gold-500/30;
+  }
+
+  .badge-success {
+    @apply badge bg-success/10 text-success border-success/30;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning/10 text-warning border-warning/30;
+  }
+
+  .badge-danger {
+    @apply badge bg-danger/10 text-danger border-danger/30;
+  }
+
+  /* ─── Cinematic Light Effect (rim/glow on top of surfaces) ─── */
+  .cinema-rim::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(201, 169, 97, 0.5) 50%,
+      transparent 100%
+    );
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Cinematic Utilities
+   ═══════════════════════════════════════════════════════════ */
+
+@layer utilities {
+  /* Stagger animations for lists */
+  .stagger-fade > * {
+    opacity: 0;
+    animation: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .stagger-fade > *:nth-child(1) { animation-delay: 0.05s; }
+  .stagger-fade > *:nth-child(2) { animation-delay: 0.15s; }
+  .stagger-fade > *:nth-child(3) { animation-delay: 0.25s; }
+  .stagger-fade > *:nth-child(4) { animation-delay: 0.35s; }
+  .stagger-fade > *:nth-child(5) { animation-delay: 0.45s; }
+  .stagger-fade > *:nth-child(6) { animation-delay: 0.55s; }
+
+  /* Shimmer loading effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.04) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2.5s linear infinite;
+  }
+
+  /* Spotlight (cinematic vignette focal area) */
+  .spotlight {
+    background: radial-gradient(
+      ellipse 60% 50% at 50% 50%,
+      rgba(201, 169, 97, 0.08) 0%,
+      transparent 70%
+    );
+  }
+}
